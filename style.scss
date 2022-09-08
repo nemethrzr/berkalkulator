@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$color1: #023e8a;
+$color2: white;
+$color3: #03045e;
+$color4: #90e0ef;
+$color5: #caf0f8;
+
+$color6:#00b4d8;
+$color7:#0077b6;
+
+
+
+$color-white:white;
+$color-warning:#DA0338;
+$color-success:$color1;
+$color-gray:rgb(192, 189, 189);
+
+html {
+    font-size: 10px;
+}
+* {
+    font-family: "Roboto";
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+h2 {
+    color: $color3;
+}
+
+.container {
+    padding: 1rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color3;
+    width: 100%;
+    color: $color2;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+
+    box-shadow: 2px 2px 5px $color3;
+    .menuToggle {
+        a {
+            color: $color2;
+            font-size: 3rem;
+        }
+    }
+    h2 {
+        text-align: right;
+        color: $color2;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+}
+.month-selector {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    a {
+        font-size: 2rem;
+
+        color: $color3;
+        text-decoration: none;
+    }
+}
+.content {
+    background-color: $color5;
+    
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: $color3;
+    margin-top: 2rem;
+    padding: 1rem;
+    
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    button {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        border-radius: 0.3rem;
+        color: $color2;
+        font-weight: 500;
+    }
+    button[type="reset"] {
+        background-color: $color-warning;
+        border: 1px solid #940428;
+    }
+    button[type="submit"] {
+        background-color: $color-success;
+        border: 1px solid #34642a;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color3;
+        width: 100%;
+        color: $color2;
+        padding: 2rem;
+    
+        box-shadow: 2px 2px 5px $color3;
+        .menuToggle {
+            a {
+                color: $color5;
+                font-size: 3rem;
+            }
+        }
+        h2 {
+            text-align: right;
+            color: $color2;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+}
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    .day {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $color6;
+        border-radius: 50%;
+        padding: 2rem;
+        color: $color2;
+        font-weight: bold;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .day.active {
+        background-color: $color1;
+    }
+    .day31 {
+        background-color: $color1;
+    }
+}
+
+.settings {
+  
+   
+    .form {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem;
+            font-size: 1.5rem;
+
+            input {
+                width: 50vw;
+                font-size: 1.5rem;
+                padding: 1rem;
+                border: 1px solid $color4;
+
+                color: $color3;
+            }
+          
+        }
+    }
+}
+.salary{
+    font-size: 1.5rem;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem 2rem;
+        padding: 1rem;
+        .col{
+            text-align: left;
+            display: flex;
+            gap: 2rem;
+            a{
+                color:$color3;
+            }
+
+        }
+    }
+}
+.navbar-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 2rem;
+    background-color: $color-white;    
+    width: 100%;
+    box-shadow: 2px 2px 5px $color3;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-block-start:0;
+        padding-inline-start: 0;
+        list-style-type: none;
+        li{
+            a{
+                color: $color3;
+                font-size: 4rem;
+                
+            }
+        }
+    }
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    padding: 2rem;
+    background-color: $color1;
+    color: $color2;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom:10rem;
+}
